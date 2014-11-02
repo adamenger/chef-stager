@@ -1,0 +1,24 @@
+---
+driver:
+  name: vagrant
+  vm_hostname: stager
+  require_chef_omnibus: "11.16.4"
+  customize:
+    cpus: 2
+    memory: 1024
+  network:
+    - ["private_network", {ip: "10.100.0.50"}]
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-14.04
+    driver_config:
+      box: opscode_ubuntu-14.04
+      box_url: "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.04_chef-provisionerless.box"
+
+suites:
+  - name: default
+    run_list:
+      - recipe[stager::default]
