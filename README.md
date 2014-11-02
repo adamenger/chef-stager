@@ -20,6 +20,8 @@ If you'd like to run stager in Vagrant, you'll need the following plugins.
 - [vagrant-berkshelf](https://github.com/berkshelf/vagrant-berkshelf)
 - [vagrant-omnibus](https://github.com/opscode/vagrant-omnibus)
 
+After installing the aforementioned plugins you should be able to `$ vagrant up`.
+
 Attributes
 ----------
 
