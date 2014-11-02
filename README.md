@@ -1,7 +1,7 @@
 stager Cookbook
 ===============
 
-Installs and configures [https://github.com/localytics/stager-server](stager).
+Installs and configures [stager](https://github.com/localytics/stager-server).
 
 Requirements
 ------------
